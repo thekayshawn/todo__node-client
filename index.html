@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <style>
+      section {
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Get Todos -->
+    <section>
+      <h2>Get Todos</h2>
+      <button id="getTodos">Get Todos</button>
+    </section>
+
+    <!-- Create Todo -->
+    <section>
+      <h2>Create Todo</h2>
+      <form id="createTodo">
+        <input type="text" name="title" placeholder="Title" />
+        <button type="submit">Create Todo</button>
+      </form>
+    </section>
+
+    <!-- Todos -->
+    <section>
+      <h2>Todos</h2>
+      <ul id="todos"></ul>
+    </section>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
